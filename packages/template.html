@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \template
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">ProdigyView Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                <a href="../packages/template.html" title="template">
+                    <i class="icon-th"></i> template
+                </a>
+                <ul class="nav nav-list nav-packages">
+                        
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/template.html">template</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="PVForms" class="element ajax clickable class">
+        <h1>PVForms<a href="../classes/PVForms.html">¶</a></h1>
+        <p class="short_description">PVForms is a class that controls the creation and management of HTML form elements.</p>
+        <div class="details collapse">The class can be tied in with other systems for creating of forms that can be generated by passing in dynamic elements.
+
+Example:
+```php
+//Create Input Element
+echo PVForms::creatInput(&#039;name&#039;, &#039;text&#039;);
+
+//Create An Input with Bootstrap Element
+echo PVForms::creatInput(&#039;name&#039;, &#039;text&#039;, array(&#039;class&#039; =&gt; &#039;form-control&#039;));
+
+//Complete Form
+echo PVForms::formBegin(&#039;my-form&#039;, array(&#039;method&#039; =&gt; &#039;post&#039;, &#039;enctype&#039; =&gt; &#039;multipart/form-data&#039;));
+
+echo PVForms::creatInput(&#039;name&#039;, &#039;text&#039;, array(&#039;class&#039; =&gt; &#039;form-control&#039;, &#039;value&#039; =&gt; &#039;My Name&#039;, &#039;placeholder&#039; =&gt; &#039;Enter your name&#039;));
+
+echo PVForms::button(&#039;enter&#039;, array(&#039;type&#039; =&gt; &#039;submit&#039;, &#039;class&#039; =&gt; &#039;btn btn-success&#039;));
+
+echo formEnd();
+```</div>
+        <a href="../classes/PVForms.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVHtml" class="element ajax clickable class">
+        <h1>PVHtml<a href="../classes/PVHtml.html">¶</a></h1>
+        <p class="short_description">PVHTML is a class designed for generating HTML elements to display to the user.</p>
+        <div class="details collapse">The class takes in basic HTML forms with options. The functionality can be used with dynamic form generation tools.
+
+Example:
+```php
+//Create array of links
+$links = array(&#039;Google&#039;, &#039;http://www.google.com&#039;, &#039;Facebook&#039;, &#039;http://www.facebook.com&#039;);
+
+$html = &#039;&#039;;
+$li = &#039;&#039;;
+
+foreach($links as $key =&gt; $value):
+	 $li .= PVHtml::li(PVHtml::ahref($key, $value));
+endforeach;
+
+$html = PVHtml::ul($li);
+
+$html = PVHtml::div($html, array(&#039;class&#039; =&gt; &#039;container&#039;));
+echo $html;
+
+//The following will be printed
+&lt;div class=&quot;container&quot;&gt;
+	 &lt;ul&gt;
+		&lt;li&gt;&lt;a href=&quot;http://www.google.com&quot;&gt;Google&lt;/a&gt;&lt;li&gt;
+		&lt;li&gt;&lt;a href=&quot;http://www.facebook.com&quot;&gt;Facebook&lt;/a&gt;&lt;li&gt;
+	 &lt;/ul&gt;
+&lt;/div&gt;
+```</div>
+        <a href="../classes/PVHtml.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVTemplate" class="element ajax clickable class">
+        <h1>PVTemplate<a href="../classes/PVTemplate.html">¶</a></h1>
+        <p class="short_description">PVTemplate is a generic template wrapper class that is used as a basis for creating a templating system.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+```php
+Example:
+
+//Create the class
+class Example extends PVObject {
+  	public static function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+Example::set(&#039;foo&#039;,&#039;bar&#039;);
+echo Example::get(&#039;foo&#039;);
+
+//Add a dynamic method
+Example::addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo Example::fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call test me and the observer attached
+Example::testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVTemplate.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 09 Dec 2018 06:31:59 +0000.<br/>
+    </footer>
+    </body>
+</html>

@@ -1,0 +1,1966 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>    ProdigyView Documentation &raquo; \PVStaticApplication
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">ProdigyView Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            <style>
+        .deprecated h2 {
+            text-decoration: line-through;
+        }
+    </style>
+    <div class="row">
+        <div class="span4">
+                    <div class="btn-group view pull-right" data-toggle="buttons-radio">
+        <button class="btn details" title="Show descriptions and method names"><i class="icon-list"></i></button>
+        <button class="btn simple" title="Show only method names"><i class="icon-align-justify"></i></button>
+    </div>
+    <div class="btn-group visibility" data-toggle="buttons-checkbox">
+        <button class="btn public active" title="Show public elements">Public</button>
+        <button class="btn protected" title="Show protected elements">Protected</button>
+        <button class="btn private" title="Show private elements">Private</button>
+        <button class="btn inherited active" title="Show inherited elements">Inherited</button>
+    </div>
+
+        <ul class="side-nav nav nav-list">
+        <li class="nav-header">
+            <i class="icon-custom icon-method"></i> Methods
+            <ul>
+                                                                                                    <li class="method public inherited">
+        <a href="#method___callStatic" title="__callStatic :: Uses the magic method __call and executes a closure/anonymous function that has been added
+to the classes $_methods using the addMethod()  method.">
+            <span class="description">Uses the magic method __call and executes a closure/anonymous function that has been added
+to the classes $_methods using the addMethod()  method.</span><pre>__callStatic</pre>
+        </a>
+    </li>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <li class="method public inherited">
+        <a href="#method_addAdapter" title="addAdapter :: Adapters allows a method to be completely overwritten by calling a different class
+with the same method name. Adapters can also be used with closures. The adapter uses
+a strategy/adapter design pattern.">
+            <span class="description">Adapters allows a method to be completely overwritten by calling a different class
+with the same method name. Adapters can also be used with closures. The adapter uses
+a strategy/adapter design pattern.</span><pre>addAdapter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addClassAdapter" title="addClassAdapter :: Will add an adapter for every method in the trigger_class to another class. The method will only be adapted to another class
+if the method in the trigger class has an adapter. This functionality can be very similiar to DI.">
+            <span class="description">Will add an adapter for every method in the trigger_class to another class. The method will only be adapted to another class
+if the method in the trigger class has an adapter. This functionality can be very similiar to DI.</span><pre>addClassAdapter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addFilter" title="addFilter :: Adds a filter to the class. Filters are for modifying a value within a class and should not
+interpet the normal flow within the method.">
+            <span class="description">Adds a filter to the class. Filters are for modifying a value within a class and should not
+interpet the normal flow within the method.</span><pre>addFilter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addMethod" title="addMethod :: Adds a closure/anonymous function to the object that can be called.">
+            <span class="description">Adds a closure/anonymous function to the object that can be called.</span><pre>addMethod</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addObserver" title="addObserver :: Adds an observer to the class. Observer events can fired in any method
+to trigger a response.">
+            <span class="description">Adds an observer to the class. Observer events can fired in any method
+to trigger a response.</span><pre>addObserver</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addToCollection" title="addToCollection :: Adds a data to the public collection, index will be assigned automatically. Primarily used for adding
+launch quanties of data to the collection">
+            <span class="description">Adds a data to the public collection, index will be assigned automatically. Primarily used for adding
+launch quanties of data to the collection</span><pre>addToCollection</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_addToCollectionWithName" title="addToCollectionWithName :: Adds data to the public collection. The data is assigned a key/index. If the key/index is already set, new information
+will override the old one.">
+            <span class="description">Adds data to the public collection. The data is assigned a key/index. If the key/index is already set, new information
+will override the old one.</span><pre>addToCollectionWithName</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_clearFilters" title="clearFilters :: Remove all the filters from a class.">
+            <span class="description">Remove all the filters from a class.</span><pre>clearFilters</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_clearObservers" title="clearObservers :: Removes all the observers assoicated with an event.">
+            <span class="description">Removes all the observers assoicated with an event.</span><pre>clearObservers</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_commandInterpreter" title="commandInterpreter :: Takes in a command and arguements and if the command exist, will pass that command to
+a function with the same name.">
+            <span class="description">Takes in a command and arguements and if the command exist, will pass that command to
+a function with the same name.</span><pre>commandInterpreter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public">
+        <a href="#method_defaultFunction" title="defaultFunction :: The default function that must be implemented. If the commandIntepreter cannot find a correspoding
+function, this function will be called.">
+            <span class="description">The default function that must be implemented. If the commandIntepreter cannot find a correspoding
+function, this function will be called.</span><pre>defaultFunction</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_get" title="get :: Retrieves a value that is in the public data collection or was pass through
+by the set method.">
+            <span class="description">Retrieves a value that is in the public data collection or was pass through
+by the set method.</span><pre>get</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getInstance" title="getInstance :: Returns the instance of a class. Used for implementing the singleton design pattern. Class
+will only be instantiated once.">
+            <span class="description">Returns the instance of a class. Used for implementing the singleton design pattern. Class
+will only be instantiated once.</span><pre>getInstance</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_getIterator" title="getIterator :: Returns the iterator for iterating through the values stored in the classes collection.">
+            <span class="description">Returns the iterator for iterating through the values stored in the classes collection.</span><pre>getIterator</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_removeAdapter" title="removeAdapter :: Removes an adapter.">
+            <span class="description">Removes an adapter.</span><pre>removeAdapter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_removeClassAdapter" title="removeClassAdapter :: Removes an adapter for an entire class.">
+            <span class="description">Removes an adapter for an entire class.</span><pre>removeClassAdapter</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_set" title="set :: Adds a value to the classes Collection. By default the collection is stored
+in the public collection. The stored instance can be retrieved later by called
+in it&#039;s key value.">
+            <span class="description">Adds a value to the classes Collection. By default the collection is stored
+in the public collection. The stored instance can be retrieved later by called
+in it&#039;s key value.</span><pre>set</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setAdapterTrace" title="setAdapterTrace :: Turn on/off the ability to trace an adapter.Turning on will log
+an adapter using PVLog when adapter is executed.">
+            <span class="description">Turn on/off the ability to trace an adapter.Turning on will log
+an adapter using PVLog when adapter is executed.</span><pre>setAdapterTrace</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setFilterTrace" title="setFilterTrace :: Turn on/off the ability to trace an filter.Turning on will log
+a filter using PVLog when filter is executed.">
+            <span class="description">Turn on/off the ability to trace an filter.Turning on will log
+a filter using PVLog when filter is executed.</span><pre>setFilterTrace</pre>
+        </a>
+    </li>
+
+                                                                                                        <li class="method public inherited">
+        <a href="#method_setObserverTrace" title="setObserverTrace :: Turn on/off the ability to trace an observer.Turning on will log
+an observer using PVLog when the observer is executed.">
+            <span class="description">Turn on/off the ability to trace an observer.Turning on will log
+an observer using PVLog when the observer is executed.</span><pre>setObserverTrace</pre>
+        </a>
+    </li>
+
+                                                </ul>
+        </li>
+        <li class="nav-header protected">» Protected
+            <ul>
+                                                                                                                <li class="method protected inherited">
+                            <a href="#method__applyFilter" title="_applyFilter :: Apply a fitler if filter is set.">
+                                <span class="description">Apply a fitler if filter is set.</span><pre>_applyFilter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method__callAdapter" title="_callAdapter :: Calls an adapter for this class. The easiest way of implementing an adapter is by placing the
+adapter at the top of the function that it is being called in. An infinite amout of parameters
+can be passed to the adapter BUT the parameters should be the same as the parents.">
+                                <span class="description">Calls an adapter for this class. The easiest way of implementing an adapter is by placing the
+adapter at the top of the function that it is being called in. An infinite amout of parameters
+can be passed to the adapter BUT the parameters should be the same as the parents.</span><pre>_callAdapter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method__hasAdapter" title="_hasAdapter :: Checks if an adapter is set for the function.">
+                                <span class="description">Checks if an adapter is set for the function.</span><pre>_hasAdapter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method__hasFilter" title="_hasFilter :: Checks if a filter has been set.">
+                                <span class="description">Checks if a filter has been set.</span><pre>_hasFilter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method__invokeMethod" title="_invokeMethod :: Calls a methods that is an instance of an class. This method is generally
+faster than using user_call_func_array.">
+                                <span class="description">Calls a methods that is an instance of an class. This method is generally
+faster than using user_call_func_array.</span><pre>_invokeMethod</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method protected inherited">
+                            <a href="#method__invokeStaticMethod" title="_invokeStaticMethod :: Calls a methods that is a static method of a class. This method is generally
+faster than using user_call_func_array.">
+                                <span class="description">Calls a methods that is a static method of a class. This method is generally
+faster than using user_call_func_array.</span><pre>_invokeStaticMethod</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                            <li class="method protected inherited">
+                            <a href="#method__notify" title="_notify :: Calls any functions that have been added to the observer if the event is present in the
+observers array.">
+                                <span class="description">Calls any functions that have been added to the observer if the event is present in the
+observers array.</span><pre>_notify</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </ul>
+        </li>
+        <li class="nav-header private">» Private
+            <ul>
+                                                                                                                                                                                                                                                                                                                                        <li class="method private inherited">
+                            <a href="#method__logAdapter" title="_logAdapter :: Write out the contents of adapters used to a log">
+                                <span class="description">Write out the contents of adapters used to a log</span><pre>_logAdapter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method__logFilter" title="_logFilter :: Write out the contents of a filter used to a log">
+                                <span class="description">Write out the contents of a filter used to a log</span><pre>_logFilter</pre>
+                            </a>
+                        </li>
+                                                                                <li class="method private inherited">
+                            <a href="#method__logObserver" title="_logObserver :: Write out the contents of an observer to a log.">
+                                <span class="description">Write out the contents of an observer to a log.</span><pre>_logObserver</pre>
+                            </a>
+                        </li>
+                                                                                                                    <li class="method private inherited">
+                            <a href="#method__prepareLogData" title="_prepareLogData :: Breaks down the data to be logged from an adapter, filter or observer.">
+                                <span class="description">Breaks down the data to be logged from an adapter, filter or observer.</span><pre>_prepareLogData</pre>
+                            </a>
+                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </ul>
+        </li>
+        <li class="nav-header">
+            <i class="icon-custom icon-constant"></i> Constants
+            <ul>
+                            </ul>
+        </li>
+    </ul>
+
+
+        </div>
+
+        <div class="span8">
+            <div class="element class">
+                <h1>PVStaticApplication</h1>
+                <small style="display: block; text-align: right">
+                                            Extends <a href="../classes/PVStaticObject.html">\PVStaticObject</a>
+                                                        </small>
+                <p class="short_description">PVStaticObjectt is an extendable class used to enhance an object with static methods.</p>
+                <div class="details">
+                    <div class="long_description">
+                        <p>ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.</p>
+<pre><code class="language-php">Example:
+
+//Create the class
+class Example extends PVObject {
+    public static function testMe($string) {
+            echo $string;
+
+            //An observer
+            $this-&gt;_notify(get_class() . '::' . __FUNCTION__, $string);
+        }
+    }
+
+//Add to its collection
+Example::set('foo','bar');
+echo Example::get('foo');
+
+//Add a dynamic method
+Example::addMethod('fiz', function($text) {
+        return 'fiz ' . $text;
+});
+
+echo Example::fizz('Bop');
+
+//Add Observer
+Example::addObserver('Example::testMe', 'test_closure', function($string) {
+    echo "\nLine 2 \n"
+        echo $string;
+
+}, array('type' =&gt; 'closure'));
+
+//Will call test me and the observer attached
+Example::testMe('Testing String ');</code></pre>
+                    </div>
+                    <table class="table table-bordered">
+                                                                                    <tr>
+                                    <th>
+                                        package
+                                                                            </th>
+                                    <td>
+                                                                                    
+                                                                                <p>data</p>
+                                    </td>
+                                </tr>
+                                                                                                                                                                                </table>
+
+                    <h3><i class="icon-custom icon-method"></i> Methods</h3>
+                                                                <a id="method___callStatic"></a>
+                        <div class="element clickable method public  method___callStatic inherited" data-toggle="collapse" data-target=".method___callStatic .collapse">
+                            <h2>Uses the magic method __call and executes a closure/anonymous function that has been added
+to the classes $_methods using the addMethod()  method.</h2>
+                            <pre>__callStatic(string $method, mixed $args = array()) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The key/name assigned to the method when added</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>mixed</code><p><p>Arguements to pass to the annoymous function. The function is called using
+call_user_func_array.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$value The value returned is the value the stored function returns</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__applyFilter"></a>
+                        <div class="element clickable method protected  method__applyFilter inherited" data-toggle="collapse" data-target=".method__applyFilter .collapse">
+                            <h2>Apply a fitler if filter is set.</h2>
+                            <pre>_applyFilter(string $class, string $method, mixed $data, array $options = array()) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class the filter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The method the filter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>mixed</code><p><p>The data that is being passed to the filter</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>options to be passed to the filter. Passed options we be passed to the function.
+-'default_return' <em>mixed</em>: If no filter is return, the data passed in by default will be return. Can be overriden
+-'event' <em>string</em>: An event to associate with the filter. Default is null</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$data The data the function returns</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__callAdapter"></a>
+                        <div class="element clickable method protected  method__callAdapter inherited" data-toggle="collapse" data-target=".method__callAdapter .collapse">
+                            <h2>Calls an adapter for this class. The easiest way of implementing an adapter is by placing the
+adapter at the top of the function that it is being called in. An infinite amout of parameters
+can be passed to the adapter BUT the parameters should be the same as the parents.</h2>
+                            <pre>_callAdapter(string $class, string $method) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class the adapter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>THe name of the method the class is being called from.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$value A value that the adapter returns</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__hasAdapter"></a>
+                        <div class="element clickable method protected  method__hasAdapter inherited" data-toggle="collapse" data-target=".method__hasAdapter .collapse">
+                            <h2>Checks if an adapter is set for the function.</h2>
+                            <pre>_hasAdapter( $class, string $method) : \boolea</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The associated method</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>\boolea</code><p><p>$hasAdapter Returns true if it has an adapter or false if it doesn not</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__hasFilter"></a>
+                        <div class="element clickable method protected  method__hasFilter inherited" data-toggle="collapse" data-target=".method__hasFilter .collapse">
+                            <h2>Checks if a filter has been set.</h2>
+                            <pre>_hasFilter(string $class, string $method) </pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The class the filter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The method of the class that the filter is in</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__invokeMethod"></a>
+                        <div class="element clickable method protected  method__invokeMethod inherited" data-toggle="collapse" data-target=".method__invokeMethod .collapse">
+                            <h2>Calls a methods that is an instance of an class. This method is generally
+faster than using user_call_func_array.</h2>
+                            <pre>_invokeMethod(string $class, string $method, array $args) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class to be called</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The name of the method in the class to be called</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>array</code><p><p>An array of arguements. Arguements have to be embedded in an array to be called.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$data Data returned by the function called</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__invokeStaticMethod"></a>
+                        <div class="element clickable method protected  method__invokeStaticMethod inherited" data-toggle="collapse" data-target=".method__invokeStaticMethod .collapse">
+                            <h2>Calls a methods that is a static method of a class. This method is generally
+faster than using user_call_func_array.</h2>
+                            <pre>_invokeStaticMethod(string $class, string $method, array $args) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class to be called</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The name of the method in the class to be called</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$args</h4>
+                                                <code>array</code><p><p>An array of arguements. Arguements have to be embedded in an array to be called.</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$data Data returned by the function called</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__logAdapter"></a>
+                        <div class="element clickable method private  method__logAdapter inherited" data-toggle="collapse" data-target=".method__logAdapter .collapse">
+                            <h2>Write out the contents of adapters used to a log</h2>
+                            <pre>_logAdapter(array $data) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p><p>The data in the adapter</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__logFilter"></a>
+                        <div class="element clickable method private  method__logFilter inherited" data-toggle="collapse" data-target=".method__logFilter .collapse">
+                            <h2>Write out the contents of a filter used to a log</h2>
+                            <pre>_logFilter(array $data) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p><p>The data in the filter</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__logObserver"></a>
+                        <div class="element clickable method private  method__logObserver inherited" data-toggle="collapse" data-target=".method__logObserver .collapse">
+                            <h2>Write out the contents of an observer to a log.</h2>
+                            <pre>_logObserver(array $data) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p><p>The data in the observer</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__notify"></a>
+                        <div class="element clickable method protected  method__notify inherited" data-toggle="collapse" data-target=".method__notify .collapse">
+                            <h2>Calls any functions that have been added to the observer if the event is present in the
+observers array.</h2>
+                            <pre>_notify(string $event) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>protected</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event</h4>
+                                                <code>string</code><p><p>The name of the even that occured that will trigger notifies</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method__prepareLogData"></a>
+                        <div class="element clickable method private  method__prepareLogData inherited" data-toggle="collapse" data-target=".method__prepareLogData .collapse">
+                            <h2>Breaks down the data to be logged from an adapter, filter or observer.</h2>
+                            <pre>_prepareLogData(array $data) : string</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>private</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>array</code><p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>string</code><p><p>$message JSON encode message of information about the data</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addAdapter"></a>
+                        <div class="element clickable method public  method_addAdapter inherited" data-toggle="collapse" data-target=".method_addAdapter .collapse">
+                            <h2>Adapters allows a method to be completely overwritten by calling a different class
+with the same method name. Adapters can also be used with closures. The adapter uses
+a strategy/adapter design pattern.</h2>
+                            <pre>addAdapter(string $trigger_class, string $trigger_method, string $call_class, array $options = array()) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>add ability to adapt singleton class</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trigger_class</h4>
+                                                <code>string</code><p><p>The class that contains the function the adapter will respond too</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trigger_method</h4>
+                                                <code>string</code><p><p>The method called that will have the adapter to be called.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$call_class</h4>
+                                                <code>string</code><p><p>The new class to be called that has the same method name</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>An array of options that be called
+-'object' <em>string</em> : Assumes that default method in the class to be called is static. If called object
+needs to be instantiated, change to object to 'instance' and one will be created before the adapter calls the function
+-'call_method' <em>string</em>: By default the method to be called to override the current one should be the
+same name. But this can be ovveridden to call a different method.
+-'type' <em>string</em>: The type of method being called. Default is class_method but if the method is a closure,
+set the type to be 'closure' and make the $trigger_method the closure</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addClassAdapter"></a>
+                        <div class="element clickable method public  method_addClassAdapter inherited" data-toggle="collapse" data-target=".method_addClassAdapter .collapse">
+                            <h2>Will add an adapter for every method in the trigger_class to another class. The method will only be adapted to another class
+if the method in the trigger class has an adapter. This functionality can be very similiar to DI.</h2>
+                            <pre>addClassAdapter(mixed $trigger_class, string $call_class, array $options = array()) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>Add ability to use singleton classes</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trigger_class</h4>
+                                                <code>mixed</code><p><p>This can either be the name of the class or an object whose methods will be adapted to another class.
+The class should be included or be autoloaded by this point.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$call_class</h4>
+                                                <code>string</code><p><p>The call class is the classes methods that will be called in place of the methods in the trigger_class.
+These class does not have to be included as this point.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>Options that be used to further distinguish the behavior of the adapters added
+-'object' <em>string</em>: Determines if the object being adapted to is static or an instance.Default is static
+-'call_class' <em>string</em>: The name of the class that the methods will be adapted too.
+-'class' <em>string</em>: The name of the whose methods will be adapted to another class</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addFilter"></a>
+                        <div class="element clickable method public  method_addFilter inherited" data-toggle="collapse" data-target=".method_addFilter .collapse">
+                            <h2>Adds a filter to the class. Filters are for modifying a value within a class and should not
+interpet the normal flow within the method.</h2>
+                            <pre>addFilter(string $class, string $method, string $filter_class, string $filter_method, array $options = array()) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class the filter is going in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The name of the method the filter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filter_class</h4>
+                                                <code>string</code><p><p>The class that the filter resides in.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$filter_method</h4>
+                                                <code>string</code><p><p>The method in the class that the parameters will be passed too.</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>Options that can be set for further modifying the filter.
+-'object' <em>string</em>: If the method being called is static, static should be inserted. If its in an instance, 'instance' should be set.
+Default is set to static.
+-'event' <em>string</em>: Associate this filter with an event.
+-'type' <em>string</em>: The type of function being called. Default is class_method but if the function is a closure,
+set the type to be 'closure' and make the $filter_method the closure</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addMethod"></a>
+                        <div class="element clickable method public  method_addMethod inherited" data-toggle="collapse" data-target=".method_addMethod .collapse">
+                            <h2>Adds a closure/anonymous function to the object that can be called.</h2>
+                            <pre>addMethod(string $method, \function $closure) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The key/value that will be used to call the function</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$closure</h4>
+                                                <code>\function</code><p><p>The anonymous function/closure to be added</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addObserver"></a>
+                        <div class="element clickable method public  method_addObserver inherited" data-toggle="collapse" data-target=".method_addObserver .collapse">
+                            <h2>Adds an observer to the class. Observer events can fired in any method
+to trigger a response.</h2>
+                            <pre>addObserver(string $event, string $class, string $method, array $options = array()) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event</h4>
+                                                <code>string</code><p><p>The name of the event that will cause a certain class and method to fire</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The name of the class that contains the function that will be fired for this event</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The name of the method that will be fired when the event occurs</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$options</h4>
+                                                <code>array</code><p><p>Options to further the define the firing of an event
+-'object' <em>string</em> : If the method being called is static, should be set to static. Else set to instance
+-'class' <em>stinrg</em> : The name of the class to be called. Default is the class that is passed in.
+-'method' <em>string</em>: The name of the method to be called. Default is the method that is passed in.
+-'type' <em>string</em>: The type of function being called. Default is class_method but if the function is a closure,
+set the type to be 'closure' and make the $method the closure</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addToCollection"></a>
+                        <div class="element clickable method public  method_addToCollection inherited" data-toggle="collapse" data-target=".method_addToCollection .collapse">
+                            <h2>Adds a data to the public collection, index will be assigned automatically. Primarily used for adding
+launch quanties of data to the collection</h2>
+                            <pre>addToCollection(mixed $data) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>mixed</code><p><p>Any data type( Object, Array, int, etc) to add to the public data collection</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_addToCollectionWithName"></a>
+                        <div class="element clickable method public  method_addToCollectionWithName inherited" data-toggle="collapse" data-target=".method_addToCollectionWithName .collapse">
+                            <h2>Adds data to the public collection. The data is assigned a key/index. If the key/index is already set, new information
+will override the old one.</h2>
+                            <pre>addToCollectionWithName(string $name, mixed $data) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    todo
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>check the relevance of get and set</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$name</h4>
+                                                <code>string</code><p><p>The key/index to assign the value to</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$data</h4>
+                                                <code>mixed</code><p><p>Data to be stored in the collection</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_clearFilters"></a>
+                        <div class="element clickable method public  method_clearFilters inherited" data-toggle="collapse" data-target=".method_clearFilters .collapse">
+                            <h2>Remove all the filters from a class.</h2>
+                            <pre>clearFilters(string $class, string $method) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code>string</code><p><p>The class the filter is in</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The method of the class that the filter is in</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_clearObservers"></a>
+                        <div class="element clickable method public  method_clearObservers inherited" data-toggle="collapse" data-target=".method_clearObservers .collapse">
+                            <h2>Removes all the observers assoicated with an event.</h2>
+                            <pre>clearObservers(string $event) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$event</h4>
+                                                <code>string</code><p><p>The event to remove all the observers from</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_commandInterpreter"></a>
+                        <div class="element clickable method public  method_commandInterpreter" data-toggle="collapse" data-target=".method_commandInterpreter .collapse">
+                            <h2>Takes in a command and arguements and if the command exist, will pass that command to
+a function with the same name.</h2>
+                            <pre>commandInterpreter(string $command) : mixed</pre>
+                            <div class="labels">
+                                                                                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$command</h4>
+                                                <code>string</code><p><p>The name of the function to be called</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$return Returns the value of the function that is called</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_defaultFunction"></a>
+                        <div class="element clickable method public  method_defaultFunction" data-toggle="collapse" data-target=".method_defaultFunction .collapse">
+                            <h2>The default function that must be implemented. If the commandIntepreter cannot find a correspoding
+function, this function will be called.</h2>
+                            <pre>defaultFunction( $params = array()) </pre>
+                            <div class="labels">
+                                                                                                                                <span class="label">abstract</span>                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$params</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_get"></a>
+                        <div class="element clickable method public  method_get inherited" data-toggle="collapse" data-target=".method_get .collapse">
+                            <h2>Retrieves a value that is in the public data collection or was pass through
+by the set method.</h2>
+                            <pre>get(string $index) : mixed</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code>string</code><p><p>The index to retrieve a value from</p></p>
+                                            </div>
+                                                                            
+                                                                            <h3>Response</h3>
+                                        <code>mixed</code><p><p>$data The data that was stored at that index</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getInstance"></a>
+                        <div class="element clickable method public  method_getInstance inherited" data-toggle="collapse" data-target=".method_getInstance .collapse">
+                            <h2>Returns the instance of a class. Used for implementing the singleton design pattern. Class
+will only be instantiated once.</h2>
+                            <pre>getInstance() : object</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code>object</code><p><p>$instance Returns the instance of a class.</p></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_getIterator"></a>
+                        <div class="element clickable method public  method_getIterator inherited" data-toggle="collapse" data-target=".method_getIterator .collapse">
+                            <h2>Returns the iterator for iterating through the values stored in the classes collection.</h2>
+                            <pre>getIterator() : \PVIterator</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    
+                                                </th>
+                                                <td>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                    
+                                                                            <h3>Response</h3>
+                                        <code><a href="../classes/PVIterator.html">\PVIterator</a></code><p><p>$iterator The classes collection in an iteratable form</p>
+<h1>access public</h1></p>
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_removeAdapter"></a>
+                        <div class="element clickable method public  method_removeAdapter inherited" data-toggle="collapse" data-target=".method_removeAdapter .collapse">
+                            <h2>Removes an adapter.</h2>
+                            <pre>removeAdapter( $class, string $method) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$method</h4>
+                                                <code>string</code><p><p>The associated method</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_removeClassAdapter"></a>
+                        <div class="element clickable method public  method_removeClassAdapter inherited" data-toggle="collapse" data-target=".method_removeClassAdapter .collapse">
+                            <h2>Removes an adapter for an entire class.</h2>
+                            <pre>removeClassAdapter( $class) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$class</h4>
+                                                <code></code><p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_set"></a>
+                        <div class="element clickable method public  method_set inherited" data-toggle="collapse" data-target=".method_set .collapse">
+                            <h2>Adds a value to the classes Collection. By default the collection is stored
+in the public collection. The stored instance can be retrieved later by called
+in it&#039;s key value.</h2>
+                            <pre>set(string $index, mixed $value) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$index</h4>
+                                                <code>string</code><p><p>The key or index to store the value at</p></p>
+                                            </div>
+                                                                                    <div class="subelement argument">
+                                                <h4>$value</h4>
+                                                <code>mixed</code><p><p>A mixed value that can be anytype</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setAdapterTrace"></a>
+                        <div class="element clickable method public  method_setAdapterTrace inherited" data-toggle="collapse" data-target=".method_setAdapterTrace .collapse">
+                            <h2>Turn on/off the ability to trace an adapter.Turning on will log
+an adapter using PVLog when adapter is executed.</h2>
+                            <pre>setAdapterTrace(boolean $trace = false) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trace</h4>
+                                                <code>boolean</code><p><p>Default is false. If set to true, will trace adatper.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setFilterTrace"></a>
+                        <div class="element clickable method public  method_setFilterTrace inherited" data-toggle="collapse" data-target=".method_setFilterTrace .collapse">
+                            <h2>Turn on/off the ability to trace an filter.Turning on will log
+a filter using PVLog when filter is executed.</h2>
+                            <pre>setFilterTrace(boolean $trace = false) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trace</h4>
+                                                <code>boolean</code><p><p>Default is false. If set to true, will trace filter.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                                            <a id="method_setObserverTrace"></a>
+                        <div class="element clickable method public  method_setObserverTrace inherited" data-toggle="collapse" data-target=".method_setObserverTrace .collapse">
+                            <h2>Turn on/off the ability to trace an observer.Turning on will log
+an observer using PVLog when the observer is executed.</h2>
+                            <pre>setObserverTrace(boolean $trace = false) : void</pre>
+                            <div class="labels">
+                                <span class="label">inherited</span>                                <span class="label">static</span>                                                                                                                            </div>
+
+                            
+                            <div class="row collapse">
+                                <div class="detail-description">
+                                    <div class="long_description"></div>
+
+                                    <table class="table">
+                                                                                    <tr>
+                                                <th>
+                                                    access
+                                                </th>
+                                                <td>
+                                                                                                                                                                        
+                                                                                                                                                                        <p>public</p>
+                                                                                                    </td>
+                                            </tr>
+                                                                                                                    </table>
+
+                                                                            <h3>Arguments</h3>
+                                                                                    <div class="subelement argument">
+                                                <h4>$trace</h4>
+                                                <code>boolean</code><p><p>Default is false. If set to true, will trace observer.</p></p>
+                                            </div>
+                                                                            
+                                                                    </div>
+                            </div>
+
+                        </div>
+                    
+                    
+                                                                <h3><i class="icon-custom icon-property"></i> Properties</h3>
+                                                    <a id="property__collection"> </a>
+                            <div class="element clickable property  protected property__collection inherited" data-toggle="collapse" data-target=".property__collection .collapse">
+                                <h2>A collection of items that belong to this class</h2>
+                                <pre>_collection : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__methods"> </a>
+                            <div class="element clickable property  protected property__methods inherited" data-toggle="collapse" data-target=".property__methods .collapse">
+                                <h2>A collection of dynamically added methods that below to this class</h2>
+                                <pre>_methods : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__adapters"> </a>
+                            <div class="element clickable property  protected property__adapters inherited" data-toggle="collapse" data-target=".property__adapters .collapse">
+                                <h2>The adapters that have been added</h2>
+                                <pre>_adapters : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__observers"> </a>
+                            <div class="element clickable property  protected property__observers inherited" data-toggle="collapse" data-target=".property__observers .collapse">
+                                <h2>Observers that have been added</h2>
+                                <pre>_observers : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__instances"> </a>
+                            <div class="element clickable property  protected property__instances inherited" data-toggle="collapse" data-target=".property__instances .collapse">
+                                <h2>Instances for singleton that have added</h2>
+                                <pre>_instances : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__filters"> </a>
+                            <div class="element clickable property  protected property__filters inherited" data-toggle="collapse" data-target=".property__filters .collapse">
+                                <h2>Intercepting filters that have been added</h2>
+                                <pre>_filters : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__traceAdapters"> </a>
+                            <div class="element clickable property  private property__traceAdapters inherited" data-toggle="collapse" data-target=".property__traceAdapters .collapse">
+                                <h2>Boolean for following and logging adapters that have been added</h2>
+                                <pre>_traceAdapters : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__traceFilters"> </a>
+                            <div class="element clickable property  private property__traceFilters inherited" data-toggle="collapse" data-target=".property__traceFilters .collapse">
+                                <h2>Boolean for following and logging filters that have been added</h2>
+                                <pre>_traceFilters : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                    <a id="property__traceObservers"> </a>
+                            <div class="element clickable property  private property__traceObservers inherited" data-toggle="collapse" data-target=".property__traceObservers .collapse">
+                                <h2>Boolean for following and logging observers that have been added.</h2>
+                                <pre>_traceObservers : </pre>
+                                <div class="labels">
+                                    <span class="label">inherited</span>                                    <span class="label">static</span>                                </div>
+                                <div class="row collapse">
+                                    <div class="detail-description">
+                                        <div class="long_description"></div>
+
+                                        <table class="table">
+                                                                                            <tr>
+                                                    <th>
+                                                        
+                                                    </th>
+                                                    <td>
+                                                                                                            </td>
+                                                </tr>
+                                                                                    </table>
+
+                                                                                    <h3>Type(s)</h3>
+                                            <code></code>
+                                                                            </div>
+                                </div>
+                            </div>
+                                                            </div>
+            </div>
+            <a id="\PVStaticApplication"></a>
+            <ul class="breadcrumb">
+                <li><a href="../index.html"><i class="icon-custom icon-class"></i></a></li>
+                    
+    
+    <li><span class="divider">\</span><a href="../namespaces/default.html">\</a></li>
+
+                <li class="active"><span class="divider">\</span><a href="../classes/PVStaticApplication.html">PVStaticApplication</a></li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 09 Dec 2018 06:32:00 +0000.<br/>
+    </footer>
+    </body>
+</html>

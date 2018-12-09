@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \data
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">ProdigyView Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                <a href="../packages/data.html" title="data">
+                    <i class="icon-th"></i> data
+                </a>
+                <ul class="nav nav-list nav-packages">
+                        
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/data.html">data</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="PVApplication" class="element ajax clickable class">
+        <h1>PVApplication<a href="../classes/PVApplication.html">¶</a></h1>
+        <p class="short_description">PVObject is an extendable class used to enhance an object that can be instantiated.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+
+Example:
+```php
+//Create the class
+class Example extends PVObject {
+  	public function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+$example = new Example();
+$example-&gt;foo=&#039;bar&#039;;
+echo $example-&gt; foo;
+
+//Add a dynamic method
+$example -&gt; addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo $example -&gt; fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call the instance and the attached observer
+$example-&gt;testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVApplication.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVCollection" class="element ajax clickable class">
+        <h1>PVCollection<a href="../classes/PVCollection.html">¶</a></h1>
+        <p class="short_description">The PVCollection class acts as a repository for data to be stored, retrieved and iterated over.</p>
+        <div class="details collapse">The collection class is a simple way of storing and getting information with key, value pairs, Any information can be stored and retrieved including strings, array, and objects. Some example use cases:
+```php
+//Add data and increment over fit
+$collection = new PVCollection();
+$collection -&gt; add(&#039;Apples&#039;);
+$collection -&gt; add(&#039;Oranges&#039;);
+
+foreach($collection as $key =&gt; $value) {
+	echo $value;
+}
+```</div>
+        <a href="../classes/PVCollection.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVConversions" class="element ajax clickable class">
+        <h1>PVConversions<a href="../classes/PVConversions.html">¶</a></h1>
+        <p class="short_description">PVConversions is a class used to convert one data type to another.</p>
+        <div class="details collapse">Often there will be requirements for converting data such as array to objects, json to xml, etc. This class is designed to have built-in functions to make those conversations easy.
+
+Example:
+```php
+//Create an array
+$data = $array(&#039;Apple&#039;, &#039;Bananna&#039;, &#039;Orange&#039;);
+
+//Convert the array to object
+$data = PVConversions::arrayToObject($data);
+
+//Will display an stdObject
+print_r($data);
+```</div>
+        <a href="../classes/PVConversions.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVIterator" class="element ajax clickable class">
+        <h1>PVIterator<a href="../classes/PVIterator.html">¶</a></h1>
+        <p class="short_description">A class used for iterating over items in loops.</p>
+        <div class="details collapse"></div>
+        <a href="../classes/PVIterator.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVObject" class="element ajax clickable class">
+        <h1>PVObject<a href="../classes/PVObject.html">¶</a></h1>
+        <p class="short_description">PVObject is an extendable class used to enhance an object that can be instantiated.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+
+Example:
+```php
+//Create the class
+class Example extends PVObject {
+  	public function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+$example = new Example();
+$example-&gt;foo=&#039;bar&#039;;
+echo $example-&gt; foo;
+
+//Add a dynamic method
+$example -&gt; addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo $example -&gt; fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call the instance and the attached observer
+$example-&gt;testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVObject.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVPatterns" class="element ajax clickable class">
+        <h1>PVPatterns<a href="../classes/PVPatterns.html">¶</a></h1>
+        <p class="short_description">PVPatterns is the parent class for implementing Adapters, Observers, Intercepting Filters and Singletons on instances.</p>
+        <div class="details collapse">Prodgiyview comes with  4 design patterns that can be extended to any object: Adapters, Observers, Intercepting Filters and Singletons. By extending this class to any object that can be instantiated, they will have the capability of using these design patterns.</div>
+        <a href="../classes/PVPatterns.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVRequestAuth" class="element ajax clickable class">
+        <h1>PVRequestAuth<a href="../classes/PVRequestAuth.html">¶</a></h1>
+        <p class="short_description"></p>
+        <div class="details collapse"></div>
+        <a href="../classes/PVRequestAuth.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVStaticApplication" class="element ajax clickable class">
+        <h1>PVStaticApplication<a href="../classes/PVStaticApplication.html">¶</a></h1>
+        <p class="short_description">PVStaticObjectt is an extendable class used to enhance an object with static methods.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+```php
+Example:
+
+//Create the class
+class Example extends PVObject {
+  	public static function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+Example::set(&#039;foo&#039;,&#039;bar&#039;);
+echo Example::get(&#039;foo&#039;);
+
+//Add a dynamic method
+Example::addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo Example::fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call test me and the observer attached
+Example::testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVStaticApplication.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVStaticInstance" class="element ajax clickable class">
+        <h1>PVStaticInstance<a href="../classes/PVStaticInstance.html">¶</a></h1>
+        <p class="short_description">PVPatterns is the parent class for implementing Adapters, Observers, Intercepting Filters and Singletons on static methods.</p>
+        <div class="details collapse">Prodgiyview comes with  4 design patterns that can be extended to any object: Adapters, Observers, Intercepting Filters and Singletons. By extending this class to any object that uses static methods, they will have the capability of using these design patterns.</div>
+        <a href="../classes/PVStaticInstance.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVStaticObject" class="element ajax clickable class">
+        <h1>PVStaticObject<a href="../classes/PVStaticObject.html">¶</a></h1>
+        <p class="short_description">PVStaticObjectt is an extendable class used to enhance an object with static methods.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+```php
+Example:
+
+//Create the class
+class Example extends PVObject {
+  	public static function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+Example::set(&#039;foo&#039;,&#039;bar&#039;);
+echo Example::get(&#039;foo&#039;);
+
+//Add a dynamic method
+Example::addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo Example::fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call test me and the observer attached
+Example::testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVStaticObject.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVStaticPatterns" class="element ajax clickable class">
+        <h1>PVStaticPatterns<a href="../classes/PVStaticPatterns.html">¶</a></h1>
+        <p class="short_description">PVPatterns is the parent class for implementing Adapters, Observers, Intercepting Filters and Singletons on static methods.</p>
+        <div class="details collapse">Prodgiyview comes with  4 design patterns that can be extended to any object: Adapters, Observers, Intercepting Filters and Singletons. By extending this class to any object that uses static methods, they will have the capability of using these design patterns.</div>
+        <a href="../classes/PVStaticPatterns.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 09 Dec 2018 06:31:59 +0000.<br/>
+    </footer>
+    </body>
+</html>

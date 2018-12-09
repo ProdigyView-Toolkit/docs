@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \util
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">ProdigyView Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                <a href="../packages/util.html" title="util">
+                    <i class="icon-th"></i> util
+                </a>
+                <ul class="nav nav-list nav-packages">
+                        
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/util.html">util</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="PVCache" class="element ajax clickable class">
+        <h1>PVCache<a href="../classes/PVCache.html">¶</a></h1>
+        <p class="short_description">PVCache is a system for caching data and retrieving cached data.</p>
+        <div class="details collapse">The default system uses a file cache for caching data. But the system through the adapter pattern is extendable to use any caching system attached to the application.
+
+Example:
+```php
+//Init The Cache
+PVCache::init();
+
+$data = array(&#039;Apples&#039;, &#039;Oranges&#039;, &#039;Bananas&#039;);
+
+//Check if cache has expired
+if(PVCache::hasExpired(&#039;mycache&#039;)):
+	 //Store The Cache
+	 PVCache::writeCache(&#039;mycache&#039;, $data);
+endif;
+
+$data = PVCache::readCache(&#039;mycache&#039;);
+
+print_r($data);
+```</div>
+        <a href="../classes/PVCache.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVCli" class="element ajax clickable class">
+        <h1>PVCli<a href="../classes/PVCli.html">¶</a></h1>
+        <p class="short_description">Command Line Interface (CLI) utility class.</p>
+        <div class="details collapse">This is an adaptation of Patrick Fisher command line parser for PHP. The class has been modified
+to utilizes adapters, filter and observers natively present in ProdigyView.</div>
+        <a href="../classes/PVCli.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVFileManager" class="element ajax clickable class">
+        <h1>PVFileManager<a href="../classes/PVFileManager.html">¶</a></h1>
+        <p class="short_description">PVFileManager allows easy manipulation of the file system such as making directories or getting mime types.</p>
+        <div class="details collapse">The class has various functions that make file manipulation reasonably easy.
+```php
+Examples:
+//Count the number of files in a directory
+echo PVFileManager::getFilesInDirectory(&#039;/path/to/directry&#039;);
+
+//Get Mime Type
+echo PVFileManager::getFileMimeType(&#039;image.jpg&#039;);
+
+//Write To File
+PVFileManager::getFileMimeType(&#039;/path/to/file&#039;, &#039;Hello World!&#039;);
+```</div>
+        <a href="../classes/PVFileManager.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVLog" class="element ajax clickable class">
+        <h1>PVLog<a href="../classes/PVLog.html">¶</a></h1>
+        <p class="short_description">PVLog is used to write information to a log for record keeping.</p>
+        <div class="details collapse">The logs that can be recorded is up to the developer. The class can be overridden with Adapters to do things like write to syslog or external logging services.
+
+Example:
+```php
+//Initialize The class
+PVLog::init();
+
+//Write various logs with different priority levels
+PVLog::writeLog(&#039;Warning&#039;, &#039;Illegal Access By User&#039;);
+PVLog::writeLog(&#039;High Alert&#039;, &#039;System Almost Out Of Memory&#039;);
+PVLog::writeLog(&#039;Low&#039;, &#039;Page Not Found&#039;);
+
+//Get the logs with a high priority level
+$logs = PVLog::readLog(&#039;High Alert&#039;);
+```</div>
+        <a href="../classes/PVLog.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVMail" class="element ajax clickable class">
+        <h1>PVMail<a href="../classes/PVMail.html">¶</a></h1>
+        <p class="short_description">PVMail is responsible for sending email from the application.</p>
+        <div class="details collapse">PVMail is a basic class for sending emails. The class either uses the default mail() function on the
+server, or can be configured to send emails via SMTP.
+
+Example:
+```php
+//Initialize The Class
+PVMail::init(array(
+            &#039;smtp_host&#039; =&gt; &#039;external.example.com&#039;,
+            &#039;smtp_username&#039; =&gt; &#039;MyLogin&#039;,
+            &#039;smtp_password&#039; =&gt; &#039;abc123&#039;,
+            &#039;smtp_port&#039; =&gt; 582,
+            &#039;mailer&#039; =&gt; &#039;smtp&#039;,
+            &#039;default_sender&#039; =&gt; &#039;mydomain@example.com&#039;
+      ));
+
+//Send An Email
+PVMail::sendEmail(array(
+	&#039;receiver&#039; =&gt; &#039;jane@example.com&#039;,
+	&#039;sender&#039;=&gt;&#039;jon@example.com&#039;,
+	&#039;subject&#039;=&gt;&#039;Hello World&#039;
+	&#039;message&#039;=&gt;&#039;Dropping a line, saying hello&#039;
+));
+```</div>
+        <a href="../classes/PVMail.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVMathematics" class="element ajax clickable class">
+        <h1>PVMathematics<a href="../classes/PVMathematics.html">¶</a></h1>
+        <p class="short_description">PVMathematics is a class for doing computations.</p>
+        <div class="details collapse">The class is relatively incomplete and could use more important functions to ease development.</div>
+        <a href="../classes/PVMathematics.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVTools" class="element ajax clickable class">
+        <h1>PVTools<a href="../classes/PVTools.html">¶</a></h1>
+        <p class="short_description">PVTools is a class that has random tools to be utilized in an application.</p>
+        <div class="details collapse">The tools in this class do not have a direct affiliation with any other class and can be considered more of general tools.
+
+Example:
+```php
+//Create random string of capital letters A -F that is 10 letters long
+$string = PVTools::generateRandomString( 10, $chars = &#039;ABCDEF&#039;);
+
+//Search a recursive array
+$data = array(
+	&#039;fruits&#039; =&gt; array(&#039;Strawberries&#039;, &#039;Oranges&#039;)
+	&#039;vegetables&#039; =&gt; array(&#039;celery&#039;, &#039;salad&#039;),
+	&#039;meat&#039; =&gt; array(
+		&#039;white&#039; =&gt; array(&#039;chicken&#039;, &#039;turkey&#039;),
+		&#039;red&#039; =&gt; array(&#039;beef&#039;, &#039;goat&#039;)
+	)
+);
+
+$item = PVTools::arraySearchRecursive(&#039;turkey&#039;, $data);
+```</div>
+        <a href="../classes/PVTools.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVValidator" class="element ajax clickable class">
+        <h1>PVValidator<a href="../classes/PVValidator.html">¶</a></h1>
+        <p class="short_description">PVValidator is a dynamically extendable class used to validate inputs.</p>
+        <div class="details collapse">The class can be used to check for a variety of inputs to validate data from mime types to correct syntax for a URL. The class is also extendable to add more validation rules.
+
+Examples:
+```php
+//Check if a file is an integer
+
+if(PVValidator::check(&#039;integer&#039;, &#039;3.4&#039;)) {
+	echo &#039;I am an integer&#039;;
+}
+
+if(PVValidator::check(&#039;url&#039;, &#039;http://www.google.com&#039;)) {
+    echo &#039;I am a valid url&#039;;
+}
+
+//Add custom validation rule
+PVValidator::addRule(&#039;is_currency&#039;, array(&#039;function&#039; =&gt; function($number) {
+    return preg_match(&quot;/^-?[0-9]+(?:\.[0-9]{1,2})?$/&quot;, $number);
+}));
+
+//Check against custom rule
+if(PVValidator::check(‘is_currecny’, &#039;$10.00&#039;)) {
+	echo &#039;I am currency&#039;;
+}
+```</div>
+        <a href="../classes/PVValidator.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 09 Dec 2018 06:31:59 +0000.<br/>
+    </footer>
+    </body>
+</html>

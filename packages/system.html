@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>     &raquo; \system
+</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+            <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+            <!--[if lt IE 9]>
+        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+        <![endif]-->
+        <script src="../js/jquery-1.7.1.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+        <script src="../js/jquery.mousewheel.min.js" type="text/javascript"></script>
+        <script src="../js/bootstrap.js" type="text/javascript"></script>
+        <script src="../js/template.js" type="text/javascript"></script>
+        <script src="../js/prettify/prettify.min.js" type="text/javascript"></script>
+    
+            <link rel="shortcut icon" href="../img/favicon.ico"/>
+        <link rel="apple-touch-icon" href="../img/apple-touch-icon.png"/>
+        <link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png"/>
+        <link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png"/>
+    </head>
+<body>
+
+        <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span> <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> </a>
+                <a class="brand" href="../index.html">ProdigyView Documentation</a>
+
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="dropdown">
+                            <a href="#api" class="dropdown-toggle" data-toggle="dropdown">
+                                API Documentation <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                                                                            </ul>
+                        </li>
+                        <li class="dropdown" id="charts-menu">
+                            <a href="#charts" class="dropdown-toggle" data-toggle="dropdown">
+                                Charts <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../graph_class.html">
+                                        <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" id="reports-menu">
+                            <a href="#reports" class="dropdown-toggle" data-toggle="dropdown">
+                                Reports <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="../errors.html">
+                                        <i class="icon-list-alt"></i>&#160;Errors
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../markers.html">
+                                        <i class="icon-list-alt"></i>&#160;Markers
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../deprecated.html">
+                                        <i class="icon-list-alt"></i>&#160;Deprecated
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="go_to_top">
+            <a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>
+        </div>
+    </div>
+    
+    <div id="___" class="container">
+        <noscript>
+            <div class="alert alert-warning">
+                Javascript is disabled; several features are only available if Javascript is enabled.
+            </div>
+        </noscript>
+
+        
+            
+    <div class="row">
+
+        <div class="span4">
+            <div class="btn-group view pull-right" data-toggle="buttons-radio">
+                <button class="btn details" title="Show descriptions and method names">
+                    <i class="icon-list"></i></button><button class="btn simple" title="Show only method names">
+                    <i class="icon-align-justify"></i>
+                </button>
+            </div>
+            <ul class="side-nav nav nav-list">
+                <li class="nav-header">
+                    <i class="icon-map-marker"></i> Packages
+                </li>
+                <a href="../packages/system.html" title="system">
+                    <i class="icon-th"></i> system
+                </a>
+                <ul class="nav nav-list nav-packages">
+                        
+    
+                </ul>
+            </ul>
+        </div>
+
+        <div class="span8 package-contents">
+                
+    <ul class="breadcrumb">
+        <li><a href="../index.html"><i class="icon-th"></i></a></li>
+            
+    
+    <li>
+        <span class="divider">\</span><a href="../packages/system.html">system</a>
+    </li>
+
+    </ul>
+
+    
+        
+        
+                    <div class="package-indent">
+                <h3><i class="icon-custom icon-class"></i> Classes, interfaces and traits</h3>
+                
+                
+                                        <div id="PVBootstrap" class="element ajax clickable class">
+        <h1>PVBootstrap<a href="../classes/PVBootstrap.html">¶</a></h1>
+        <p class="short_description">PVBootstrap is responsible for initializing the system the system by initializing all the classes.</p>
+        <div class="details collapse">This class will have to be refactored, but it was designed to give base options for creating a secure environment based off of a configuration file that would be passed to it.</div>
+        <a href="../classes/PVBootstrap.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVConfiguration" class="element ajax clickable class">
+        <h1>PVConfiguration<a href="../classes/PVConfiguration.html">¶</a></h1>
+        <p class="short_description">The PVConfiguration acts a global registry for system-wide configuration options for the application.</p>
+        <div class="details collapse">The configuration class is most notably used for setting variables that can be retrieved anywhere in your system with the setters and getters. There is also the option of setting different environment.
+
+Example:
+```php
+//Init the class
+PVConfiguration::init();
+
+//Add An Example Configuration
+$data = array(
+	&#039;host&#039;=&gt;&#039;localhost&#039;,
+	&#039;database&#039; =&gt; &#039;test&#039;,
+	&#039;user&#039;=&gt;&#039;admin&#039;,
+	&#039;password&#039;=&gt;&#039;abc123&#039;
+);
+PVConfiguration::addConfiguration(&#039;mysql&#039;,  $data);
+
+//Retrieve and use that configuration
+$mysql = PVConfiguration::getConfiguration(&#039;mysql&#039;);
+echo $mysql-&gt;host;
+
+//Set different configs for different environments
+PVConfiguration::addConfiguration(&#039;mysql&#039;,  $data, array(&#039;environment&#039; =&gt; &#039;production&#039;));
+```</div>
+        <a href="../classes/PVConfiguration.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVDatabase" class="element ajax clickable class">
+        <h1>PVDatabase<a href="../classes/PVDatabase.html">¶</a></h1>
+        <p class="short_description">PVDatabase controls the connections to various databases ranging from Mysql to MongoDB.</p>
+        <div class="details collapse">For future development, the class needs to be written, but it offers a lot of powerful features that including prepared statements, schema manipulation, sanitization, and other features.
+
+Example:
+```php
+//Initialize the class
+PVDatabase::init();
+
+//Two Different Configurations
+$mysql_options = array(
+	&#039;dbhost&#039; =&gt; &#039;localhost&#039;,
+	&#039;dbuser&#039; =&gt; &#039;jondoe&#039;,
+	&#039;dbpass&#039;=&gt;&#039;abc123&#039;,
+	&#039;dbtype&#039;=&gt;&#039;mysql&#039;,
+	&#039;dbname&#039;=&gt;&#039;example1&#039;,
+	&#039;dbport&#039;=&gt;3306
+);
+
+//Add The Connection
+PVDatabase::addConnection(&#039;connection1&#039;, $mysql_options);
+
+$postgres_options = array(
+    &#039;dbhost&#039; =&gt; &#039;localhost&#039;,
+    &#039;dbuser&#039; =&gt; &#039;janedoe&#039;,
+    &#039;dbpass&#039;=&gt;&#039;doeraeme&#039;,
+    &#039;dbtype&#039;=&gt;&#039;postgresql&#039;,
+    &#039;dbname&#039;=&gt;&#039;example2&#039;,
+    &#039;dbport&#039;=&gt;5432
+);
+
+//Add The Connection
+PVDatabase::addConnection(&#039;connection2&#039;, $postgres_options);
+
+//Connect To the Mysql Database
+PVDatabase::setDatabase(&#039;connection1&#039;);
+
+//Sanitize input
+$value = PVDatabase::makeSafe(&#039;SELECT ItemName, ItemDescription FROM Items WHERE ItemNumber = 999; DROP TABLE USERS &#039;);
+
+//Execute A Query
+PVDatabase::query(&quot;INSERT INTO users(name) VALUES(${value})&quot;);
+
+//Change the Database connection
+PVDatabase::setDatabase(&#039;connection2&#039;);
+```</div>
+        <a href="../classes/PVDatabase.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVLibraries" class="element ajax clickable class">
+        <h1>PVLibraries<a href="../classes/PVLibraries.html">¶</a></h1>
+        <p class="short_description">PVLibraries is designed to load external libraries into the system, especially those that are not in a management service like Composer.</p>
+        <div class="details collapse">While tools like composer make including and accessing libraries easy, not every library is on the service nor does every project want to manage their 3rd parties libraries in the same way. PVLibraries primary focus is the loading of external libraries to be used in your application.
+
+Example:
+```php
+//Initialize the class
+PVLibraries::init();
+
+//Add an external library
+PVLibraries::addLibrary(&#039;MailLoader&#039;, array(&#039;path&#039; =&gt; &#039;/absolute/path/to/library/1&#039;, &#039;explicit_load&#039; =&gt; true));
+
+//Add a library with name spaces
+PVLibraries::addLibrary(&#039;Facebook&#039;, array(&#039;path&#039; =&gt; &#039;/absolute/path/to/library/2&#039;, &#039;namespaced&#039; =&gt; true));
+
+//To your application to load these libraries for use
+PVLibraries::loadLibraries();
+```</div>
+        <a href="../classes/PVLibraries.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVSecurity" class="element ajax clickable class">
+        <h1>PVSecurity<a href="../classes/PVSecurity.html">¶</a></h1>
+        <p class="short_description">PVSecurity is a class designed to handle the security of your application ranging from encryption to hashing.</p>
+        <div class="details collapse">ProdigyView comes with the ability to implement adapters, intercepting filters and observers. Extending this class to a child class will give the child class the ability to use those design patterns along with a collection that can assign and retrieve values using magic functions.
+```php
+Example:
+
+//Create the class
+class Example extends PVObject {
+  	public static function testMe($string) {
+			echo $string;
+
+			//An observer
+			$this-&gt;_notify(get_class() . &#039;::&#039; . __FUNCTION__, $string);
+		}
+	}
+
+//Add to its collection
+Example::set(&#039;foo&#039;,&#039;bar&#039;);
+echo Example::get(&#039;foo&#039;);
+
+//Add a dynamic method
+Example::addMethod(&#039;fiz&#039;, function($text) {
+		return &#039;fiz &#039; . $text;
+});
+
+echo Example::fizz(&#039;Bop&#039;);
+
+
+//Add Observer
+Example::addObserver(&#039;Example::testMe&#039;, &#039;test_closure&#039;, function($string) {
+  	echo &quot;\nLine 2 \n&quot;
+		echo $string;
+
+}, array(&#039;type&#039; =&gt; &#039;closure&#039;));
+
+//Will call test me and the observer attached
+Example::testMe(&#039;Testing String &#039;);
+```</div>
+        <a href="../classes/PVSecurity.html" class="more">« More »</a>
+    </div>
+
+                                        <div id="PVSession" class="element ajax clickable class">
+        <h1>PVSession<a href="../classes/PVSession.html">¶</a></h1>
+        <p class="short_description">PVSession is the class for handling the cookie session information related to the system.</p>
+        <div class="details collapse">The class offers a variety of tools for how to set up basic session control within your application. These features can be used in conjunction with other session handling methodologies.
+
+Example:
+```php
+//Initialize the class
+PVSession::init();
+
+//Write data to a cookie
+PVSession::writeCookie(&#039;foo&#039;, &#039;bar&#039;);
+echo PVSession::readCookie(&#039;foo&#039;);
+
+//Encrypt the  value
+PVSession::writeCookie(&#039;foo&#039;, &#039;bar&#039;, array(&#039;hash_cookie&#039; =&gt; true));
+echo PVSession::readCookie(&#039;foo&#039;, array(&#039;hash_cookie&#039; =&gt; true);
+```</div>
+        <a href="../classes/PVSession.html" class="more">« More »</a>
+    </div>
+
+                            </div>
+            
+    
+        </div>
+    </div>
+    </div>
+
+        <footer class="span12">
+            Template is built using <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap 2</a> and icons provided by
+            <a href="http://glyphicons.com/">Glyphicons</a>.<br/>
+            Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and<br/>
+            generated on Sun, 09 Dec 2018 06:31:59 +0000.<br/>
+    </footer>
+    </body>
+</html>
